@@ -129,7 +129,7 @@ function App() {
                       {/* {errors.course && <span className="text-sm" style={{ color: 'red' }}>{errors.course}</span>} */}
                     <TextField id="message" name="message" label="Message" variant="outlined" onChange={(e) => setMessage(e.target.value)} />
                       {/* {errors.message && <span className="text-sm" style={{ color: 'red' }}>{errors.message}</span>} */}
-                    <Button type="submit" variant="outline">refer</Button>
+                    <Button type="submit">refer</Button>
                   </Box>
                   </form>
                 </Box>
