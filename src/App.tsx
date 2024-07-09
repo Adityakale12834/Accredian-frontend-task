@@ -64,7 +64,7 @@ function App() {
     };
     try {
       console.log(formData);
-      const response = await axios.post('http://localhost:3000/referral', formData);
+      const response = await axios.post('https://accredian-backend-task-1-j0mh.onrender.com/', formData);
       console.log('Referral submitted successfully:', response.data);
       setReferrerName("");
       setReferrerEmail("");
@@ -129,7 +129,7 @@ function App() {
                       {/* {errors.course && <span className="text-sm" style={{ color: 'red' }}>{errors.course}</span>} */}
                     <TextField id="message" name="message" label="Message" variant="outlined" onChange={(e) => setMessage(e.target.value)} />
                       {/* {errors.message && <span className="text-sm" style={{ color: 'red' }}>{errors.message}</span>} */}
-                    <Button type="submit" >refer</Button>
+                    <Button type="submit" variant="outline">refer</Button>
                   </Box>
                   </form>
                 </Box>
