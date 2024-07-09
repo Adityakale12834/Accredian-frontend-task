@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
-import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
 import { TextField } from "@mui/material";
 import axios from "axios";
@@ -130,7 +129,7 @@ function App() {
                       {/* {errors.course && <span className="text-sm" style={{ color: 'red' }}>{errors.course}</span>} */}
                     <TextField id="message" name="message" label="Message" variant="outlined" onChange={(e) => setMessage(e.target.value)} />
                       {/* {errors.message && <span className="text-sm" style={{ color: 'red' }}>{errors.message}</span>} */}
-                    <Button type="submit" varient="contained">refer</Button>
+                    <Button type="submit" >refer</Button>
                   </Box>
                   </form>
                 </Box>
